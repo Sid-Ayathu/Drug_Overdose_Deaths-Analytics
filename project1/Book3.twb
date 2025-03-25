@@ -1,0 +1,804 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='clean6_drug_deaths' inline='true' name='federated.0n5ia7g03fz1la1bn8mhg1fuyfgx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean6_drug_deaths' name='textscan.1h2d0sn077elyc13fvxtw066rqw6'>
+            <connection class='textscan' directory='C:/Users/Siddharth/Desktop/IIITB/IIITB sem 5/Data Visualization(DV)/project1' filename='clean6_drug_deaths.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1h2d0sn077elyc13fvxtw066rqw6' name='clean6_drug_deaths.csv' table='[clean6_drug_deaths#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0.3' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='string' name='Sex' ordinal='4' />
+            <column datatype='string' name='Race' ordinal='5' />
+            <column datatype='string' name='ResidenceCity' ordinal='6' />
+            <column datatype='string' name='ResidenceCounty' ordinal='7' />
+            <column datatype='string' name='DeathCity' ordinal='8' />
+            <column datatype='string' name='DeathCounty' ordinal='9' />
+            <column datatype='string' name='Location' ordinal='10' />
+            <column datatype='string' name='InjuryPlace' ordinal='11' />
+            <column datatype='string' name='COD' ordinal='12' />
+            <column datatype='integer' name='Heroin' ordinal='13' />
+            <column datatype='integer' name='Cocaine' ordinal='14' />
+            <column datatype='integer' name='Fentanyl' ordinal='15' />
+            <column datatype='integer' name='Fentanyl_Analogue' ordinal='16' />
+            <column datatype='integer' name='Oxycodone' ordinal='17' />
+            <column datatype='integer' name='Oxymorphone' ordinal='18' />
+            <column datatype='integer' name='Ethanol' ordinal='19' />
+            <column datatype='integer' name='Hydrocodone' ordinal='20' />
+            <column datatype='integer' name='Benzodiazepine' ordinal='21' />
+            <column datatype='integer' name='Methadone' ordinal='22' />
+            <column datatype='integer' name='Amphet' ordinal='23' />
+            <column datatype='integer' name='Tramad' ordinal='24' />
+            <column datatype='integer' name='Morphine_NotHeroin' ordinal='25' />
+            <column datatype='integer' name='Hydromorphone' ordinal='26' />
+            <column datatype='integer' name='OpiateNOS' ordinal='27' />
+            <column datatype='integer' name='AnyOpioid' ordinal='28' />
+            <column datatype='integer' name='no_of_drugs' ordinal='29' />
+            <column datatype='integer' name='num_of_deaths_in_county' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1h2d0sn077elyc13fvxtw066rqw6' name='clean6_drug_deaths.csv' table='[clean6_drug_deaths#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0.3' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='integer' name='Age' ordinal='3' />
+            <column datatype='string' name='Sex' ordinal='4' />
+            <column datatype='string' name='Race' ordinal='5' />
+            <column datatype='string' name='ResidenceCity' ordinal='6' />
+            <column datatype='string' name='ResidenceCounty' ordinal='7' />
+            <column datatype='string' name='DeathCity' ordinal='8' />
+            <column datatype='string' name='DeathCounty' ordinal='9' />
+            <column datatype='string' name='Location' ordinal='10' />
+            <column datatype='string' name='InjuryPlace' ordinal='11' />
+            <column datatype='string' name='COD' ordinal='12' />
+            <column datatype='integer' name='Heroin' ordinal='13' />
+            <column datatype='integer' name='Cocaine' ordinal='14' />
+            <column datatype='integer' name='Fentanyl' ordinal='15' />
+            <column datatype='integer' name='Fentanyl_Analogue' ordinal='16' />
+            <column datatype='integer' name='Oxycodone' ordinal='17' />
+            <column datatype='integer' name='Oxymorphone' ordinal='18' />
+            <column datatype='integer' name='Ethanol' ordinal='19' />
+            <column datatype='integer' name='Hydrocodone' ordinal='20' />
+            <column datatype='integer' name='Benzodiazepine' ordinal='21' />
+            <column datatype='integer' name='Methadone' ordinal='22' />
+            <column datatype='integer' name='Amphet' ordinal='23' />
+            <column datatype='integer' name='Tramad' ordinal='24' />
+            <column datatype='integer' name='Morphine_NotHeroin' ordinal='25' />
+            <column datatype='integer' name='Hydromorphone' ordinal='26' />
+            <column datatype='integer' name='OpiateNOS' ordinal='27' />
+            <column datatype='integer' name='AnyOpioid' ordinal='28' />
+            <column datatype='integer' name='no_of_drugs' ordinal='29' />
+            <column datatype='integer' name='num_of_deaths_in_county' ordinal='30' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0.3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0.3]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Unnamed: 0.3</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sex]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Sex</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Race</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Race]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Race</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ResidenceCity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ResidenceCity]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>ResidenceCity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ResidenceCounty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ResidenceCounty]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>ResidenceCounty</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeathCity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeathCity]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>DeathCity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DeathCounty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DeathCounty]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>DeathCounty</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>InjuryPlace</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[InjuryPlace]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>InjuryPlace</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COD]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>COD</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Heroin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Heroin]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Heroin</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cocaine</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cocaine]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Cocaine</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fentanyl</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fentanyl]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Fentanyl</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fentanyl_Analogue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fentanyl_Analogue]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Fentanyl_Analogue</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oxycodone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Oxycodone]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Oxycodone</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oxymorphone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Oxymorphone]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Oxymorphone</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ethanol</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ethanol]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Ethanol</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hydrocodone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hydrocodone]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Hydrocodone</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Benzodiazepine</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Benzodiazepine]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Benzodiazepine</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Methadone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Methadone]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Methadone</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amphet</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Amphet]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Amphet</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tramad</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tramad]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Tramad</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Morphine_NotHeroin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Morphine_NotHeroin]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Morphine_NotHeroin</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hydromorphone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hydromorphone]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>Hydromorphone</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OpiateNOS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OpiateNOS]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>OpiateNOS</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AnyOpioid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AnyOpioid]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>AnyOpioid</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_of_drugs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[no_of_drugs]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>no_of_drugs</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_of_deaths_in_county</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_of_deaths_in_county]</local-name>
+            <parent-name>[clean6_drug_deaths.csv]</parent-name>
+            <remote-alias>num_of_deaths_in_county</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Any Opioid' datatype='integer' name='[AnyOpioid]' role='measure' type='quantitative' />
+      <column caption='Death City' datatype='string' name='[DeathCity]' role='dimension' type='nominal' />
+      <column caption='Death County' datatype='string' name='[DeathCounty]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Fentanyl Analogue' datatype='integer' name='[Fentanyl_Analogue]' role='measure' type='quantitative' />
+      <column caption='Injury Place' datatype='string' name='[InjuryPlace]' role='dimension' type='nominal' />
+      <column caption='Morphine NotHeroin' datatype='integer' name='[Morphine_NotHeroin]' role='measure' type='quantitative' />
+      <column caption='Opiate NOS' datatype='integer' name='[OpiateNOS]' role='measure' type='quantitative' />
+      <column caption='Residence City' datatype='string' name='[ResidenceCity]' role='dimension' type='nominal' />
+      <column caption='Residence County' datatype='string' name='[ResidenceCounty]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='clean6_drug_deaths.csv' datatype='table' name='[__tableau_internal_object_id__].[clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828]' role='measure' type='quantitative' />
+      <column caption='No Of Drugs' datatype='integer' name='[no_of_drugs]' role='measure' type='quantitative' />
+      <column caption='Num Of Deaths In County' datatype='integer' name='[num_of_deaths_in_county]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='clean6_drug_deaths.csv' id='clean6_drug_deaths.csv_11DF4B93A124495292A6D0067D207828'>
+            <properties context=''>
+              <relation connection='textscan.1h2d0sn077elyc13fvxtw066rqw6' name='clean6_drug_deaths.csv' table='[clean6_drug_deaths#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Unnamed: 0.3' ordinal='1' />
+                  <column datatype='date' name='Date' ordinal='2' />
+                  <column datatype='integer' name='Age' ordinal='3' />
+                  <column datatype='string' name='Sex' ordinal='4' />
+                  <column datatype='string' name='Race' ordinal='5' />
+                  <column datatype='string' name='ResidenceCity' ordinal='6' />
+                  <column datatype='string' name='ResidenceCounty' ordinal='7' />
+                  <column datatype='string' name='DeathCity' ordinal='8' />
+                  <column datatype='string' name='DeathCounty' ordinal='9' />
+                  <column datatype='string' name='Location' ordinal='10' />
+                  <column datatype='string' name='InjuryPlace' ordinal='11' />
+                  <column datatype='string' name='COD' ordinal='12' />
+                  <column datatype='integer' name='Heroin' ordinal='13' />
+                  <column datatype='integer' name='Cocaine' ordinal='14' />
+                  <column datatype='integer' name='Fentanyl' ordinal='15' />
+                  <column datatype='integer' name='Fentanyl_Analogue' ordinal='16' />
+                  <column datatype='integer' name='Oxycodone' ordinal='17' />
+                  <column datatype='integer' name='Oxymorphone' ordinal='18' />
+                  <column datatype='integer' name='Ethanol' ordinal='19' />
+                  <column datatype='integer' name='Hydrocodone' ordinal='20' />
+                  <column datatype='integer' name='Benzodiazepine' ordinal='21' />
+                  <column datatype='integer' name='Methadone' ordinal='22' />
+                  <column datatype='integer' name='Amphet' ordinal='23' />
+                  <column datatype='integer' name='Tramad' ordinal='24' />
+                  <column datatype='integer' name='Morphine_NotHeroin' ordinal='25' />
+                  <column datatype='integer' name='Hydromorphone' ordinal='26' />
+                  <column datatype='integer' name='OpiateNOS' ordinal='27' />
+                  <column datatype='integer' name='AnyOpioid' ordinal='28' />
+                  <column datatype='integer' name='no_of_drugs' ordinal='29' />
+                  <column datatype='integer' name='num_of_deaths_in_county' ordinal='30' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{81FECB62-FDB9-4437-B6C9-1D135609B83C}' />
+    </worksheet>
+    <worksheet name='piechart(deaths in a county)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean6_drug_deaths' name='federated.0n5ia7g03fz1la1bn8mhg1fuyfgx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n5ia7g03fz1la1bn8mhg1fuyfgx'>
+            <column caption='Death County' datatype='string' name='[DeathCounty]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[num_of_deaths_in_county]' derivation='Count' name='[cnt:num_of_deaths_in_county:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DeathCounty]' derivation='None' name='[none:DeathCounty:nk]' pivot='key' type='nominal' />
+            <column caption='Num Of Deaths In County' datatype='integer' name='[num_of_deaths_in_county]' role='measure' type='quantitative' />
+            <column-instance column='[num_of_deaths_in_county]' derivation='Count' name='[pcto:cnt:num_of_deaths_in_county:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[none:DeathCounty:nk]' />
+              <wedge-size column='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[cnt:num_of_deaths_in_county:qk]' />
+              <size column='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[cnt:num_of_deaths_in_county:qk]' />
+              <text column='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[pcto:cnt:num_of_deaths_in_county:qk]' />
+              <text column='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[none:DeathCounty:nk]' />
+              <text column='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[cnt:num_of_deaths_in_county:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8FA59E37-D225-43D4-8B08-B0F9B83A6B8D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='piechart(deaths in a county)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[none:DeathCounty:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[cnt:num_of_deaths_in_county:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0n5ia7g03fz1la1bn8mhg1fuyfgx].[none:DeathCounty:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{29BE43D3-C6DE-4EDA-9EA2-C1373DB4D04C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D7C9A02-6C4F-4EDC-A176-7C48FEA1C139}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='piechart(deaths in a county)' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAPRUlEQVR4nO3d6W8bd37H8c8MZ0RSlkTrsBxdvhrFdRzHdi7sOvEWRlugDwLELdD+D31S
+      IE8K9EGLAs0mPVxsN2iL7AZ7ZLHYbpLFNsnuZhPFSezGlh1vLNm0s7Yk6qIkUiJFifcxnJlf
+      H7jxNiFlURJnRuZ8Xo8MSx5+CfPN35AczkhCCAEil5KdHoDISQyAXI0BkKsxAHI1BkCuxgDI
+      1RgAuRoDIFdjAORqDIBcjQGQqzEAcjUGQK7GAMjVGAC5GgMgV2MA5GoMgFyNAZCrMQByNQZA
+      rsYAyNUYALkaAyBXYwDkagyAXI0BkKsxAHI1BkCuxgDI1RgAuYppmhgeHsa7774LAFAcnofI
+      VrIso6+vD7J857mfKwC5iq7rGBoagqIoiMVikHiFGHIzrgDkanwNQK5w/fp1jI+P46mnnsLY
+      2Bj6+/vh8Xi4C0TuoOs6Ll26BMMwcPLkSZw/fx6yLHMFIHdpa2vDrVu3oGkaAHAFIHcQQqBY
+      LMLn82Fubg7d3d3IZrMMgNyN7wKRa2UyGQZA7pVKpbgLRO5lGAZXAHKvsbExrgDkblwByNUY
+      ALkaAyBXYwDkajwWiCwhhMDQ0BCKxSKeffZZxONxBINBqKqKQqGA1tZWRCIRHDp0CDt37sSe
+      PXvsnc/UUE5dZQBkHdM0sbq6imKxiM7OTqiqil27dmF+fh4LCwuQJAlXrlxBIBBAT08PVFW1
+      fCZhlqGtXkQx8lMYhVkGQNaQJAl9fX1QFAWFQgHXrl1DPp9HIBBALBbDkSNH0NzcjHQ6jcnJ
+      ScvnufPAH0Yx+jqM/PTv5uTnANTIhDChp4PIz38fRm6i4udcAaghCSFgFheQn/8ByquXAFR/
+      nmcAtCWXL1/GQw89hMXFRUSjUbS2tqKlpQVerxeSJEHTNOzduxeLi4vo7e3F+fPn7/68r68P
+      q6uriEQiME0TTz/9NC5cuAC/349AIID29nZkMhk8/PDDG5rJ1LMoRt9EceltwCzd83e5C0Rb
+      cvnyZei6Dl3XEYvFcODAAWiaBlmWYZomJEnC4cOHEQqFoCgKenp6MD4+DgAol8t3t3Ps2DG8
+      //77OHnyJGZmZiCEuPutrVOnTtU0ixAmyskryIdfhVmK1PRv+DkAbYksy+jq6kI8HkdLSws6
+      Ojqwe/duxONxxGIx9PX1AQDC4TC8Xi+CwSASiQRUVUV/fz8WFhaQTCYRDAZx+PBh3LhxA/F4
+      HKqq4sCBA5idna1pDlOLIzd1BtmJf6j5wQ9wBaAt0jTt7nv7xWIRhmGgo6Pj7rO31+sFAMTj
+      cbS1taFUKsHr9UJRFCiKgnw+j3K5DFmW0drainQ6DVVVoarq3Z/v2LFjzdsXwoSW+Bj58Hch
+      9PSG52cAdN8y9Qzys69AS5wDYG5qG9wFIluMjo4imUzi3LlziMfjSCaTmJiofFuyVuV0EOnf
+      Pg8t8RE2++AH+C4Q2WB+fh7BYBCDg4MIBAKYmZlBPp+HYRgYHBzc0LaEMFCMvoHCwk8AoW95
+      Nq4AZLmpqSlks1lEIhF0dHQgHA4jlUohFAphI3vgpp5BNvQiCvM/qsuDH+BrALJJIpGAx+PB
+      jRs38Mgjj6C9vR2xWAzd3d01/Xs9N4ns5Eswiwt1nYsB0LanrVxEbvpbEEau7tvmawDatoQQ
+      KC29hfzc9wBhWHIbDIC2JWHqyM+9itLSO5beDgOgbUcYBWSn/hXl1YuW3xYDoG1FGAVkQi9A
+      T43YcnsMgLYNU88iG3oBevq6bbfJAGhbMMtJZMb/ruqXVqzED8LIcaaeRWb8721/8AMMgBwm
+      jAKyoW/CyI05cvsMgBwjjCKyoRehp685NgMDIEcIoSM3/S2UU585OgcDINsJIVCY+yG0lf9x
+      ehQGQPYrxX6F4uLPnR4DAAMgm2nJ3yAf/i7WOk2J3RgA2cYozCE3dQYQ5fV/2SYMgGxh6jlk
+      Qy9u6ovrVmIAZDkhBPLhV2AUZpwepQIDIMuVlt6GtnzW6TGqYgBkKT07hvzcD5weY00MgCwj
+      jAJyM98GhOb0KGtiAGQJIQTy86996Vz82xEDIEuUU5+htPQLp8dYFwOgutPLWeRm/gNbOWOb
+      XRgA1d2PR36C70wlkNw+n3etid8Io7oai93ChxNDMEwPQnkZz3Xr+HrAhCw5PVl1XAGobkp6
+      Ca9deRWGeee0hXlTwn8tKvj3ORXxbfpGEAOguvng9ruYWZn6yt9KGM/LeGm6CedWPDC3xzFw
+      dzEAqotkfhXvfL72Ic6akPCzmAcvh1Usadtnf4gBUF38PPg6sqXMOr8lIVSQ8U/TKj5IbI/V
+      gAHQls2uzuB86MOaf18TEt6Oe3BmVsV8UYKTp2dmALQlQgi8MfpjlM2NvucpIVyU8S8zKn61
+      7EHZoY8MGABtyXj8Nq4tbP40hgYkvJdQcGZWRdiB1YAB0KYJIfBW8E0IsfWn74WSjDMzKn5h
+      82rAAGjTxuO3EYzW75w+JiQMJRT844yKUN6e1YAB0KYIIfDfwTfq8uz/VUuajG+HVfwspqBk
+      8WrAAGhTphITuBG17izOAhLOr3rw4nQTxnPWrQYMgDZMCIGh27+25Nn/qxJlCS/PqXh9SUHe
+      gqskMQDasJX8Mj6dHbbxFiVcSHrw0nQTbmbluq4GDIA27MPxIWhGyfbbXdUlvDKv4kdRBdn6
+      XCaYAdDG5LU8Pp74wNEZfpP24JvTTRhNb301YAC0IdcXriJVTDo9BjKGhO9FFPwwoiCzhdWA
+      X4ihmgkh8HFoO53fR8LVjAfjeRl/1q3jiTYT0gYPNOUKQDWLZRdxe+m3To9RIWNIeC2q4Dvz
+      ClY2eEgSA6CafTJ5DvqGD3qzi4SbuTvvFF1YlWs+1JoBUE10U7f5rc/NKZgSfrqk4D/nVSRq
+      +BomA6CazCfDiKTmnR6jRhJu52S8NNOE8+usBgyAanJl9hLENrmoRa2KpoQ3lxS8HFYRLVV/
+      dcwAaF2GaeCzuU+dHmOT7nwN859nVAwlKg+1ZgC0roXUHBaSc06PsSVlIeGduIJ/C6tYKP5u
+      NWAAtK5gZPS+2/1Zy2xRxplZFe/93xdv+EEY3ZMQAqPzzl7Lt97KQsIvlxWMZmSuAHRvOS2L
+      6cRXT3bVGBZKDIDWMREfQ1EvOD2GZRgA3dNWzvhwP2AAtCYhBELLY06PYSkGQGvKaVlEUxGn
+      x7AUA6A1za7MNPT+P8AA6B6mVyadHsFyDIDWNBa75fQIlmMAVJVpmojeN0d/bh4DoKpy5Rzi
+      ubjTY1iOAVBVy9kYysY2vbBXHTEAqqryWl+NiQFQVdF0Y7///wUGQFUtZ2NOj2ALBkAVhBCu
+      eAEMMACqQjd1JPMrTo9hCwZAFTS9hHQx5fQYtmAAVCGn5TZx1cf7EwOgCplS2ukRbMMAqAID
+      IFfLFDNOj2AbBkAVsiUGQC7W6F+C+f8YAFUoG+54BwhgAFSFISy4Huk2xQCogmHU6RKM9wEG
+      QBU0F3wP4AsMgCrIknseFu65p1Qz1aM6PYJtGABVkGWP0yPYhgFQhSa5yekRbMMAqILH457L
+      RjAAqtCsNjs9gm0YAFVo8wWcHsE2DIAqtHhbnR7BNgyAKrR4W5wewTYMgCq0educHsE2DIAq
+      +NVm+BS/02PYggFQhSbF65oXwgyAKnhkD9qbO5wewxYMgKrqbt3t9Ai2YABU1a4d3U6PYAsG
+      QFUNtO91egRbMACqqjfQ7/QItmAAVFXXji5XHBPEAKgqn+JHV0vjvw5gAFSVJEnY077P6TEs
+      xwBoTQ91/77TI1iOAdCaBrsOOj2C5RgArWl3a0/DHxrNAGhNPtWHve37nR7DUgyA7ulg9yGn
+      R7AUA6B7Otp33OkRLMUA6J4Gdu5t6NcBDIDuyaf68UjPUafHsAwDoHUdfuCI0yNYhgHQuo73
+      PwFFbszzhbrnFGAuVCwWcfHiRQQCARQKBSQSCZw+fRoTExP4/PPP0dfXh0QigYGBAYRCIRw7
+      dgwtLS3o7Oz80nba/R0Y3HUQt5ZuOnRPrMMVoIF5vV4MDAygqakJTz75JHp6egAADz74IDo6
+      OqAoCnbs2IGRkRGk02l89NFHGB0drdiOJEl4as/X7B7fFgyggS0vL+OTTz5BIBDA1atXcfz4
+      cSQSCaRSKbS2tuLAgQPI5/M4fvw4Hn30Uezbtw/ZbBZCiIptPbHna1DkxtthkES1e0sNwTRN
+      lEolKIoCWZbh8XhgGAYkSYIkSRBCQNM0eL1emKYJWZah6zpUtXJ/XwiBF4b+tuF2g7gCNDBZ
+      luH3+6GqKjyeO+f893g8kGUZkiRBlmX4fD5IkgSPxwNJkqo++IE7u0Ff3/eMnePbgitAA5mc
+      nMTOnTuRzWaRSCSQy+UwMDCAzs5OLC4uwuv1or+/HwsLC1AUBZ2dnbh27Roee+wxRKNRtLW1
+      YW5uDvF4HAcPHkQsFkN3dzd27doFVVWRKabx/Ft/ibyWc/qu1k3j7dS5WCKRwPz8PIQQyGaz
+      6O7uRiQSQTweR7lchmma6O3txdmzZyFJEp577jlEo1FMT08jEoncffb3eDwwTRPBYBADAwPY
+      uXMnVFVFq68Nj/U/iQtT55y9o3XEXaAGIkkSent7EYlE0NXVhWPHjmFwcBBjY2MQQsDn8wEA
+      9u/fj4MHD2JiYgKmaWJsbAx+vx+5XA5+vx+PP/442tracPToUQSDwS/dxqnBP3birlmGu0AN
+      JJVKoa2tDeFwGMViEbFYDCdOnEA0GoXf74fP50NzczOSySRkWYamaejq6sLq6iqam5uRSqWg
+      KApu3LiBQ4cOoaWlBSsrK+jt7b37GkI3dPzNL5/HQmrO4XtbHwyANuzs2Hv4/qevOD1GXXAX
+      yAWEEFhaWrr751u3biGRSCAcDmNxcRHJZBI3b9b+9uaJ/d9omJPnMgAXiEajGB4eBgDouo5A
+      IIDLly9jamoKIyMjGB4exurqKlZWVmraXnNTM049+EdWjmwbBuACvb29aG9vB3Dns4GbN2/i
+      mWeegdfrRSQSgc/nQzqdhmEYNW/zDw/+CZo89//lVBmAC8zOziKZTGJkZASRSATlchnRaBSK
+      ouDEiRN44IEH4Pf7EQjUvlvT2dyFpw/8gYVT24Mvgl3ki/9qSZLqsr1YZgl//c5fQTNKddme
+      E7gCuMgXxwDVy66Wbnzj907VbXtOYAC0aZIk4dnDf4omj9fpUTaNAdCWdLfuvq8/HWYAtGWn
+      j/w5Wu/TM0cwANqygD+A00f+wukxNuV/AdGM7GPrQvGEAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
